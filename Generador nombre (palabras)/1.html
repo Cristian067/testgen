@@ -1,0 +1,39 @@
+<html>
+<head>
+<script>
+function hacer(){
+var aLetras = new Array('ma', 'me', 'mi', 'mo', 'mu', 'ta', 'te', 'ti', 'tu', 'n', 'to', 'ra', 're', 'ri', 'ro', 'ru', 'a', 'e', 'i', 'o', 'u', 'la', 'le', 'li','lo', 'lu', 'ca', 'ce', 'ci', 'co', 'cu', 'sa', 'se', 'si','so', 'su', 'da', 'de', 'di', 'do', 'du', 'ba', 'be', 'bi', 'bo', 'bu', 'ka', 'ke', 'ki','ko', 'ku', 'wa', 'we', 'wi', 'wo', 'wu', 'nya');
+var bLetras = new Array('ma', 'me', 'mi', 'mo', 'mu', 'ta', 'te', 'ti', 'tu', 'n', 'to', 'ra', 're', 'ri', 'ro', 'ru', 'a', 'e', 'i', 'o', 'u', 'la', 'le', 'li','lo', 'lu', 'ca', 'ce', 'ci', 'co', 'cu', 'sa', 'se', 'si','so', 'su', 'da', 'de', 'di', 'do', 'du', 'ba', 'be', 'bi', 'bo', 'bu', 'ka', 'ke', 'ki','ko', 'ku');
+var cLetras = new Array('ma', 'me', 'mi', 'mo', 'mu', 'ta', 'te', 'ti', 'tu', 'n', 'to', 'ra', 're', 'ri', 'ro', 'ru', 'a', 'e', 'i', 'o', 'u', 'la', 'le', 'li','lo', 'lu', 'ca', 'ce', 'ci', 'co', 'cu', 'sa', 'se', 'si','so', 'su', 'da', 'de', 'di', 'do', 'du', 'ba', 'be', 'bi', 'bo', 'bu', 'ka', 'ke', 'ki','ko', 'ku');
+var dLetras = new Array('ma', 'me', 'mi', 'mo', 'mu', 'ta', 'te', 'ti', 'tu', 'n', 'to', 'ra', 're', 'ri', 'ro', 'ru', 'a', 'e', 'i', 'o', 'u', 'la', 'le', 'li','lo', 'lu', 'ca', 'ce', 'ci', 'co', 'cu', 'sa', 'se', 'si','so', 'su', 'da', 'de', 'di', 'do', 'du', 'ba', 'be', 'bi', 'bo', 'bu', 'ka', 'ke', 'ki','ko', 'ku');
+var eLetras = new Array('ma', 'me', 'mi', 'mo', 'mu', 'ta', 'te', 'ti', 'tu', 'n', 'to', 'ra', 're', 'ri', 'ro', 'ru', 'a', 'e', 'i', 'o', 'u', 'la', 'le', 'li','lo', 'lu', 'ca', 'ce', 'ci', 'co', 'cu', 'sa', 'se', 'si','so', 'su', 'da', 'de', 'di', 'do', 'du', 'ba', 'be', 'bi', 'bo', 'bu', 'ka', 'ke', 'ki','ko', 'ku');
+var fLetras = new Array('ma', 'me', 'mi', 'mo', 'mu', 'ta', 'te', 'ti', 'tu', 'n', 'to', 'ra', 're', 'ri', 'ro', 'ru', 'a', 'e', 'i', 'o', 'u', 'la', 'le', 'li','lo', 'lu', 'ca', 'ce', 'ci', 'co', 'cu', 'sa', 'se', 'si','so', 'su', 'da', 'de', 'di', 'do', 'du', 'ba', 'be', 'bi', 'bo', 'bu', 'ka', 'ke', 'ki','ko', 'ku');
+
+var aLetra = aLetras[Math.floor(Math.random()*aLetras.length)];
+var bLetra = bLetras[Math.floor(Math.random()*bLetras.length)];
+var cLetra = cLetras[Math.floor(Math.random()*cLetras.length)];
+var dLetra = dLetras[Math.floor(Math.random()*dLetras.length)];
+var eLetra = eLetras[Math.floor(Math.random()*eLetras.length)];
+var fLetra = fLetras[Math.floor(Math.random()*fLetras.length)];
+cajaLetra = document.getElementById("campo1");
+cajaLetra.value = cLetra;
+cajaCombinada1 = document.getElementById("campo2");
+cajaCombinada1.value = aLetra+bLetra+cLetra;
+cajaCombinada1 = document.getElementById("campo3");
+cajaCombinada1.value = aLetra+bLetra+cLetra+dLetra; 
+cajaCombinada2 = document.getElementById("campo4");
+cajaCombinada2.value = aLetra+bLetra+cLetra+dLetra+eLetra;
+cajaCombinada3 = document.getElementById("campo5");
+cajaCombinada3.value = aLetra+bLetra+cLetra+dLetra+eLetra+fLetra;
+}
+</script>
+</head>
+<body>
+<input type="button" value="Hacer esta cosa" onclick="hacer();" /><br />
+<input type="text" name="campo1" id="campo1" /><br />
+3 vocales:<input type="text" name="campo2" id="campo2" /><br />
+4 vocales:<input type="text" name="campo3" id="campo3" /><br />
+5 vocales:<input type="text" name="campo4" id="campo4" /><br />
+6 vocales:<input type="text" name="campo5" id="campo5" /><br />
+</body>
+</html>
